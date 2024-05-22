@@ -54,6 +54,18 @@ $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
+                    <?php if ($result && $result->num_rows > 0): ?>
+                        <div id="eventCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <?php
+                                $active = true;
+                                while ($row = $result->fetch_assoc()):
+                                    $image_url = htmlspecialchars($row['image_url']);
+                                    $name = htmlspecialchars($row['name']);
+                                ?>
+                                    <div class="carousel-item <?php echo $active ? 'active' : ''; ?>">
+                                        <img src="<?php echo $image_url; ?>" class="d-block w-50" alt="<?php echo $name; ?>">
+                                        <div class="carousel-caption d-none d-md-block">
                     echo '<a href="event_details.php?id='.$row["id"].'" class="list-group-item list-group-item-action">';
                     echo '<h5 class="mb-1">' . $row["name"] . '</h5>';
                     echo '<p class="mb-1">' . $row["description"] . '</p>';

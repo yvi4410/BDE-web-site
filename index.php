@@ -82,6 +82,7 @@ $result = $conn->query($sql);
         <a href="contact.php" class="btn btn-primary mb-3">Contact</a>
         <div class="list-group">-->
         <br>
+        <h1 class="mt-5">Events To Come</h1><br>
             <?php
             $sql = "SELECT * FROM events ORDER BY date DESC LIMIT 2";
             $result = $conn->query($sql);
