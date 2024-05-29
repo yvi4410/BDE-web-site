@@ -5,3 +5,11 @@ body {
 .container {
     max-width: 800px;
 }
+
+.navbar{
+    background: linear-gradient(90deg, #3F2A56, #FF5C39);
+}
+
+.navbartitle{
+    opacity: 0.45;
+}
