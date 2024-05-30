@@ -53,6 +53,8 @@
         }
         ?>
 
+
+
         <h2 class="mt-5">Registrations</h2>
         <a href="register.php?event_id=<?php echo $event_id; ?>" class="btn btn-primary mb-3">Register for this Event</a>
         <ul class="list-group">

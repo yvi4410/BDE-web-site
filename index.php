@@ -19,10 +19,7 @@ $result = $conn->query($sql);
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<link rel="stylesheet" href="style.css">
-        <div class="navbar">
             <div class="container">
-            <div class="navbartitle">
                     <a class="navbar-brand" href="#">BDE</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -44,8 +41,6 @@ $result = $conn->query($sql);
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
     </nav>
     <br>
 

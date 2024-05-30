@@ -15,7 +15,6 @@ $result = $conn->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Accueil</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -47,6 +46,7 @@ $result = $conn->query($sql);
     
 <div class="container">
     <h1 class="mt-5">Registration For Events</h1><br>
+    <h3 class="mt-5">Click on the event you want to register :<h3><br>
 
     <br>
     
@@ -64,13 +64,16 @@ $result = $conn->query($sql);
                     echo '<p class="mb-1">' . $row["description"] . '</p>';
                     echo '<small>' . $row["date"] . ' at ' . $row["location"] . '</small>';
                     echo '</a>';
+                   
                 }
             } else {
                 echo '<p class="text-muted">No events found</p>';
             }
             ?>
         </div>
+
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
